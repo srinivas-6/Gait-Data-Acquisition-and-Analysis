@@ -1,6 +1,8 @@
 # Gait-Data-Acquisition-and-Analysis
 
-Development of Sensor Platform for Gait Data Analysis 
+### Development of Sensor Platform for Gait Data Analysis 
+
+
 
 The Sensor Platforms for Gait Analysis developed in this project include Plantar pressure insole and Inertial Measurment Units.
 
