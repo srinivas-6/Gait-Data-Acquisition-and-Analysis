@@ -1,31 +1,33 @@
-# Gait-Data-Acquisition-and-Analysis
+# Welcome to our Project
 
-### Development of Sensor Platform for Gait Data Analysis 
+## Wearable-Sensor-Systems-Development-for-Gait-Analysis
+Gait analysis is a systematic evaluation of human motion, and serves as an important medical diagnostic process which has many end user applications in healthcare, rehabilitation therapy and exercise training. The technology supporting the analysis of human motion has advanced over time. However conventional gait analysis must be performed in a gait laboratory, which is costly and hence inaccessible to most people, and also cannot provide gait measurement in a natural terrain. In recent years, demand for wearable sensor systems for the purpose of gait analysis has taken a huge leap as a cost-effective technology and has also shown promising results.
 
-The Sensor Platforms for Gait Analysis developed in this project include Plantar pressure insole and Inertial Measurment Units.
+<p align="center">
+  <img width="687" height="580" src="Gait.png">
+</p>
 
-The objective of the project is (i) Design & Development of Sensorized Insole using Force Sensitive Resistive (FSR) material for measuring Plantar Pressure data and Visualization. (ii) Joint Angle measurement using IMU sensors and Validation. (iii) Estimation of Gait Parameters.
+This project is aimed at presenting a wearable sensor platform for gait data acquisition and analysis. The first sensor system includes an in-shoe plantar pressure sensor insole and inertial measurement units. The in-shoe system includes a sensorized insole with a piezo resistive material. Key features of this insole include good working pressure range, cost effectiveness, real time data visualization (check Insole Visualization.gif  or PP.mp4) and data acquisition for an intuitive understanding of plantar pressure distribution. 
 
-The Demo Video gives an overview of the objectives developed in this project.
+### Plantar Pressure Insole
+![Sensor-Development-for-Gait-Analysis-](./Insole.png)
 
+The regions in the feet are subdivided into eight anatomical regions and the mean pressure is plotted over time which is crucial for gait event detection (Gait Phases).
 
+### Insole Data over One Gait Cycle
+![Sensor-Development-for-Gait-Analysis-](./Insole_Regions_one_Gait_cycle.png)
 
-<img width="591" alt="plantar_pressure" src="https://user-images.githubusercontent.com/36731575/40585613-5606d602-61b6-11e8-91ba-c702e85fae17.png">
+The second sensor system involves inertial measuring units for body segment and joint angle estimation in the context of human motion analysis. The main focus is on angle estimation methods that use only accelerometers and gyroscopes and therefore do not rely on homogenous magnetic fields. The anglular changes are estimated by fusing GyroRate(°/sec) and Accelerometer angle (calculated) using Kalman and Complementary filter algorithms.
 
-### Foot Plantar Pressure sensor
+IMU Sensor System (MPU-9250)
+![Sensor-Development-for-Gait-Analysis-](./IMU.jpg)
 
-<img width="206" alt="insole" src="https://user-images.githubusercontent.com/36731575/40585625-945172be-61b6-11e8-9838-e2a3d86dc5cb.png">
+The estimated angles of the gait trails are validated with an optical reference system using Kinovea. Data acquisition includes a set of experiments of real life scenarios like sitting and standing postures, hallway walking from which gait parameters and features are extracted. Finally, the work is concluded with estimation of gait parameters which include gait phase events, body segment orientation, joint angle and temporal parameters like stride time, step time, cadence, stance time, swing time etc.
 
-
-### Sensor setup on the Subject
-<img width="324" alt="sesnor_setup" src="https://user-images.githubusercontent.com/36731575/40585627-97d86df2-61b6-11e8-90f6-e604b4a1cab9.png">
-
-### Joint Angle validation with Optical tracking Software
-
-![fully extended](https://user-images.githubusercontent.com/36731575/40585631-a766a3ce-61b6-11e8-9d59-d3b2252be245.jpg)
-![fully flexed](https://user-images.githubusercontent.com/36731575/40585634-aa6c1eb4-61b6-11e8-8cb9-2ada8c828610.jpg)
-
-
-
+### Gait Cycle Standards (Rancho Los Amigos (RLA) gait analysis committee)
+![Sensor-Development-for-Gait-Analysis-](./Gait_cycle.jpg)
 
 
+
+### Gait Event Detection
+![Sensor-Development-for-Gait-Analysis-](./Gait_Phases.png)
